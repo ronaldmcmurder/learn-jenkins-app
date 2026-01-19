@@ -2,9 +2,7 @@ pipeline {
     agent any
 
     stages {
-        /* This is a comment
-        across multiple
-        lines */
+       
        /* stage('Build') {
             agent {
                 docker {
