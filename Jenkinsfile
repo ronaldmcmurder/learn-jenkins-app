@@ -2,7 +2,9 @@ pipeline {
     agent any
 
     stages {
-       
+        /* This is a comment
+        across multiple
+        lines */
        /* stage('Build') {
             agent {
                 docker {
@@ -37,8 +39,7 @@ pipeline {
                 '''
             }
         }
-    
-    }stage('Test') {
+         stage('Test2') {
             agent {
                 docker {
                     image 'node:18-alpine'
@@ -53,6 +54,9 @@ pipeline {
                 '''
             }
         }
+    
+    
+    }
     
     post {
         always {
