@@ -22,10 +22,13 @@ pipeline {
         }
         stage ('Test') {
             steps {
-        sh 'echo "test stage"'
+        sh '''
+        'echo "test stage"
+        test -e /build/index.html ] && echo "File exists" || echo "File does not exist
+        '''
         }
         }
-        
+
     }
 
 }
